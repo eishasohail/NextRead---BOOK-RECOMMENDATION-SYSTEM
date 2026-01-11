@@ -4,7 +4,7 @@ An AI-powered book recommendation system built using Node.js, Express.js, and Go
 
 ## Live Demo
 
-[Try NextRead](https://your-render-url.onrender.com)
+[Try NextRead](https://nextread-book-recommendation-system.onrender.com/)
 
 ## Tech Stack
 
