@@ -1,6 +1,6 @@
-# NextRead - Book Recommendation System
+# NextRead - AI Powered Book Recommendation System
 
-An AI-powered book recommendation system built using Node.js, Express.js, and Google Gemini API. Users enter their reading preferences like mystery, thriller, or self-help, and the app generates personalized book recommendations with title, author, and a brief description. The frontend features a modern, responsive design with Tailwind CSS and an animated mesh gradient background for a visually appealing experience. Deployed on Render.
+An AI-powered book recommendation system built using Node.js, Express.js, and Google Gemini API. Users enter their reading preferences like mystery, thriller, or self-help and the app generates personalized book recommendations with title, author, and a brief description. The frontend features a modern responsive design with Tailwind CSS and an animated mesh gradient background for a visually appealing experience. Deployed on Render.
 
 ## Live Demo
 
