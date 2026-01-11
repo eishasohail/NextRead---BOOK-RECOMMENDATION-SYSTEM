@@ -1,0 +1,143 @@
+/* Font */
+body { 
+    font-family: 'Inter', sans-serif; 
+}
+
+/* Spinner Animation */
+.spinner {
+    width: 24px;
+    height: 24px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Mesh Gradient Background */
+.mesh-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    overflow: hidden;
+    background-color: #fefefe;
+}
+
+.blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(70px);
+    animation: float 12s ease-in-out infinite;
+}
+
+/* Main Blobs - Bigger & Brighter */
+.blob-purple {
+    width: 600px;
+    height: 600px;
+    background: #a855f7;
+    opacity: 0.6;
+    top: -150px;
+    left: -100px;
+    animation-delay: 0s;
+}
+
+.blob-yellow {
+    width: 500px;
+    height: 500px;
+    background: #facc15;
+    opacity: 0.5;
+    top: 50px;
+    right: -100px;
+    animation-delay: 2s;
+}
+
+.blob-pink {
+    width: 550px;
+    height: 550px;
+    background: #ec4899;
+    opacity: 0.5;
+    bottom: -150px;
+    left: 25%;
+    animation-delay: 4s;
+}
+
+.blob-blue {
+    width: 450px;
+    height: 450px;
+    background: #38bdf8;
+    opacity: 0.5;
+    bottom: 15%;
+    right: 5%;
+    animation-delay: 6s;
+}
+
+/* Extra Blobs for More Effect */
+.blob-green {
+    width: 400px;
+    height: 400px;
+    background: #4ade80;
+    opacity: 0.4;
+    top: 40%;
+    left: -50px;
+    animation-delay: 3s;
+}
+
+.blob-orange {
+    width: 350px;
+    height: 350px;
+    background: #fb923c;
+    opacity: 0.4;
+    top: 20%;
+    right: 20%;
+    animation-delay: 5s;
+}
+
+.blob-violet {
+    width: 300px;
+    height: 300px;
+    background: #8b5cf6;
+    opacity: 0.5;
+    bottom: 30%;
+    left: 40%;
+    animation-delay: 7s;
+}
+
+.blob-cyan {
+    width: 380px;
+    height: 380px;
+    background: #22d3d1;
+    opacity: 0.4;
+    top: 60%;
+    right: 30%;
+    animation-delay: 1s;
+}
+
+@keyframes float {
+    0%, 100% { 
+        transform: translate(0, 0) scale(1); 
+    }
+    25% { 
+        transform: translate(40px, -40px) scale(1.1); 
+    }
+    50% { 
+        transform: translate(-30px, 30px) scale(0.95); 
+    }
+    75% { 
+        transform: translate(20px, 20px) scale(1.05); 
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.3);
+}

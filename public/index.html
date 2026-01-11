@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NextRead - Book Recommendations</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen py-16 px-4">
+    
+    <!-- Mesh Gradient Background -->
+    <div class="mesh-bg">
+        <div class="blob blob-purple"></div>
+        <div class="blob blob-yellow"></div>
+        <div class="blob blob-pink"></div>
+        <div class="blob blob-blue"></div>
+        <div class="blob blob-green"></div>
+        <div class="blob blob-orange"></div>
+        <div class="blob blob-violet"></div>
+        <div class="blob blob-cyan"></div>
+        <div class="overlay"></div>
+    </div>
+    
+    <div class="max-w-3xl mx-auto relative z-10">
+        <!-- Header -->
+        <div class="text-center mb-12">
+            <h1 class="text-6xl font-extrabold text-gray-900 mb-4">
+                NextRead
+            </h1>
+            <p class="text-xl text-gray-500">
+                Discover your perfect book match
+            </p>
+        </div>
+        
+        <!-- Input Card -->
+        <div class="bg-white/70 backdrop-blur-md rounded-3xl shadow-2xl p-12 border border-white/60">
+            <label class="block text-gray-800 font-semibold text-2xl mb-5">
+                What kind of books do you enjoy?
+            </label>
+            <textarea 
+                id="userInput" 
+                rows="3" 
+                class="w-full p-5 bg-white border-2 border-gray-200 rounded-2xl text-xl resize-none transition-all duration-300 focus:outline-none focus:border-violet-500 mb-6 placeholder-gray-400"
+                placeholder="E.g., mystery, thriller, comedy, self-help, science fiction..."
+            ></textarea>
+            <button 
+                id="recommendBtn"
+                class="w-full py-5 px-8 bg-gradient-to-r from-violet-600 to-purple-600 text-white font-bold text-xl rounded-2xl transition-all duration-300 hover:from-violet-700 hover:to-purple-700 hover:shadow-lg hover:shadow-violet-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-3"
+            >
+                <span id="btnText">Get Recommendations</span>
+                <span id="btnLoader" class="hidden items-center gap-3">
+                    <div class="spinner"></div>
+                    Finding books...
+                </span>
+            </button>
+        </div>
+        
+      <!-- Results -->
+<div id="recommendation" class="hidden mt-10">
+    <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Recommended For You</h2>
+    <div id="booksGrid" class="grid grid-cols-1 gap-5"></div>
+</div>
+    </div>
+    
+    <!-- Footer -->
+   <footer class="text-center mt-16 text-gray-400 text-base relative z-10">
+    <p>Powered by Google Gemini AI</p>
+</footer>
+        
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
